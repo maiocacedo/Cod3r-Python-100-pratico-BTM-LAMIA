@@ -1,7 +1,7 @@
 
 # print('bem-vindo')
 #import this
-#import pacote.sub.arquivo
+import pacote.sub.arquivo
 
 # import tipos.variaveis
 
