@@ -1,12 +1,12 @@
 total = 0
 qtde = 0
-nota = 0
+num = 0
 
 
-while nota != -1:
-    nota = float(input('informe a nota ou -1 para sair'))
-    if nota != -1:
+while num != -1:
+    num = float(input('informe um número ou -1 para sair: '))
+    if num != -1:
         qtde += 1 
-        total += nota
+        total += num
 
-print('A média da turma é {total/qtde}')
+print(f'A foram digitados {qtde} números.\nA soma dos números digitados é: {total}.\nA média entre eles é {total/qtde}')

@@ -1,20 +1,14 @@
-pessoas = ['Gui', 'Rebeca']
-adjs = ['inteligente', 'sapeca']
+pessoas = ['Gilberto', 'Rebeca']
+adjs = ['esperto', 'sapeca']
 
+# Percorre as posições de pessoas e adjs e mostra cada pessoa com cada adjetivo.
 for p in pessoas:
     for a in adjs:
         print(f'{p} é {a}')
 
-for i in [1, 2, 3]:
-    pass
+# Percorre numeros entre 1 e 11 e mostra apenas os pares
 
 for i in range(1, 11):
     if i % 2:
         continue
     print (i, end = ' ')
-    
-for i in range(1, 11):
-    if i == 5:
-        break
-    print(i)
-    

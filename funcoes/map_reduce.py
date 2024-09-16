@@ -1,4 +1,5 @@
-from functools import reduce
+# Função para definir incrementar a nota do aluno com o bonus delta
+
 
 def somar_nota(delta):
     def calc(nota):
@@ -12,17 +13,14 @@ notas_finais2 = list(map(somar_nota(1.6), notas))
 
 print(notas_finais1, '  ', notas_finais2)
 
+from functools import reduce
 
+nums = [6.0, 12, 7.4] # lista de números
+
+# Função para somar a com b
 def somar(a, b):
     return a + b
 
-total = reduce(somar, notas, 0)
-print(total)
-
-# for i, nota in enumerate(notas):
-#     notas[i] = nota + 1.5
-    
- 
-# for i in range(len(notas)):
-#     notas[i] = notas[i] + 1.5
-    
+# Reduce para percorrer a lista de números e aplicar a função soma neles
+total = reduce(somar, nums, 0)
+print('6 + 12 + 7.4 = ', total)

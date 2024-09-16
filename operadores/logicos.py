@@ -1,17 +1,15 @@
-b1 = True
-b2 = False
-b3 = True
+Verdadeiro = True
+Falso = False
 
-print(b1 and b2 and b3)
-print(b1 or b2 or b3)
-print(b1 != b2) # xor ^
-print(not b1)
-print(not b2)
-print(not b3)
+print(Verdadeiro and Falso)
+print(Verdadeiro or Falso)
+print(Verdadeiro != Falso) 
+print(not Verdadeiro)
+print(not Falso)
 
-print(b1 and not b2 and b3)
+print(Verdadeiro and not Falso) 
 
 x = 3 
 y = 4
 
-print(b1 and not b2 and x < y)
+print(Verdadeiro and not Falso and x < y)

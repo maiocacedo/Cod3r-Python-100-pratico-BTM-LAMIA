@@ -1,14 +1,9 @@
-x = 10
-y = 3.0
 
-# +3 prefixada prefix
-# x++ profixado postfix 
-
-print(x + y) # infix
-print(x - y)
-print(x * y)
-print(x / y)
-print(x % y)
+print(8 + 2) 
+print(8 - 2)
+print(8 * 2)
+print(8 / 2)
+print(8 % 2)
 
 par = 34
 impar = 33

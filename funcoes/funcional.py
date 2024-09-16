@@ -1,14 +1,21 @@
+# Função para somar argumento a com b
+
 def soma(a, b):
     return a + b
 
 
-def sub(a, b):
-    return a - b
+# Função para multiplicar argumento a com b
+ 
+def multiplicacao(a, b):
+    return a * b
 
 
-somar = soma
-print(somar(3,4))
 
+somar = soma # Atribuindo função soma ao objeto somar
+print(somar(3,4)) # Exibindo soma de 3 com 4
+
+
+# Definindo uma função com outra função como parametro, e retornando o resultado dessa função com os parametro op1 e op2.
 
 def operacao_aritmetica(fn, op1, op2):
     return fn(op1, op2)
@@ -17,10 +24,11 @@ def operacao_aritmetica(fn, op1, op2):
 resultado = operacao_aritmetica(soma, 13, 48)
 print(resultado)
 
+resultado2 = operacao_aritmetica(multiplicacao, 20, 10)
+print(resultado2)
 
-resultado = operacao_aritmetica(sub, 13, 48)
-print(resultado)
 
+# Definindo soma com duas funções para que o processamento seja mais rapido
 
 def soma_parcial(a):
     # processamento pesado 1 - 10s
@@ -38,7 +46,7 @@ def soma_parcial(a):
 soma_1 = soma_parcial(1) # 1m
 r1 = soma_1(2)  # 10s
 r2 = soma_1(3)  # 10s
-r3 = soma_1(4)  # 10s   
+r3 = soma_1(4)  # 10s  
 # 1m 30s
 
 resultado_final = soma_parcial(10)(12)

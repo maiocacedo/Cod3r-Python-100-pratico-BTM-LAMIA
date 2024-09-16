@@ -1,7 +1,10 @@
-lockdown = False
-grana = 130
+chovendo = False #Atribuindo valor logico false
+Saldo = 58 # Atribuindo 58 para o saldo
 
-status = 'Em casa' if lockdown and grana <= 100 else 'uhuuuuuuuu'
+""" Sabado será no parque se não estiver chovendo e saldo for maior que 50, 
+ senão sabado será triste """
 
-print(f'o status é {status}')
+Sabado = 'no parque. :)' if chovendo == False and Saldo >= 50 else 'triste :(' 
+
+print(f'Esse sabado será {Sabado}')
 
